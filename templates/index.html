@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Resume Generator</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#generator">Generator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section with Parallax Effect -->
+    <div class="parallax home" id="home">
+        <div class="content">
+            <h1>Welcome to the Resume Generator</h1>
+            <p>"Craft your perfect resume in seconds"</p>
+            <div id="dynamicQuote"></div> <!-- Dynamic Quote using JS -->
+        </div>
+    </div>
+
+    <!-- About Section with Parallax Effect -->
+    <div class="parallax about" id="about">
+        <div class="container">
+            <h2>About This Project</h2>
+            <p>This project helps you convert your LinkedIn PDF profile into a well-structured HTML resume using AI.</p>
+            <p>Upload your PDF, sit back, and get your professionally formatted resume in seconds.</p>
+            <p>All you need is your LinkedIn profile and our AI-powered system takes care of the rest!</p>
+            <div class="about-image"></div> <!-- CSS Image -->
+        </div>
+    </div>
+
+    <!-- Resume Generator Section with Parallax Effect -->
+    <div class="parallax generator" id="generator">
+        <div class="container">
+            <h2>Resume Generator</h2>
+            <form id="pdfForm" enctype="multipart/form-data">
+                <label for="pdfUpload" class="custom-file-upload">
+                    <i class="fas fa-cloud-upload-alt"></i> Upload LinkedIn PDF
+                </label>
+                <input type="file" id="pdfUpload" name="file" accept="application/pdf" required>
+                <button type="submit" id="submitBtn">Generate Resume</button>
+            </form>
+            <div id="loadingSpinner" class="spinner"></div> <!-- Loading spinner -->
+ 
+            <div id="output"></div> <!-- Result will show here -->
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

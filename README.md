@@ -76,13 +76,18 @@ source venv/bin/activate  # For Windows use `venv\Scripts\activate`
 ├── templates/
 │   └── index.html        # HTML template for the application
 └── README.md             # Project documentation
+```
+
 ## Contributing
 - Fork the repository.
 - Create a new branch (git checkout -b feature-branch).
 - Commit your changes (git commit -am 'Add new feature').
 - Push to the branch (git push origin feature-branch).
 - Create a new Pull Request.
+  
 ## Demo Video
 Watch a demonstration of the Resume Generator application on YouTube: **https://youtu.be/egV8onYpeH0**
+
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.

@@ -39,12 +39,13 @@ The **Resume Generator** is a web application designed to convert LinkedIn profi
    ```bash
    python -m venv venv
 source venv/bin/activate  # For Windows use `venv\Scripts\activate`
+
 3. **Run the Application**
 
    ```bash
    python app.py
 - This will start a local server. You can access the application at http://127.0.0.1:5000 in your web browser.
-
+```
 
 ## How It Works
 ### 1. User Interface
